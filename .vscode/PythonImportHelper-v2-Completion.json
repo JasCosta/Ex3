@@ -1,0 +1,115 @@
+[
+    {
+        "label": "csv",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "csv",
+        "description": "csv",
+        "detail": "csv",
+        "documentation": {}
+    },
+    {
+        "label": "pickle",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pickle",
+        "description": "pickle",
+        "detail": "pickle",
+        "documentation": {}
+    },
+    {
+        "label": "deepcopy",
+        "importPath": "copy",
+        "description": "copy",
+        "isExtraImport": true,
+        "detail": "copy",
+        "documentation": {}
+    },
+    {
+        "label": "randint",
+        "importPath": "random",
+        "description": "random",
+        "isExtraImport": true,
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "color",
+        "importPath": "turtle",
+        "description": "turtle",
+        "isExtraImport": true,
+        "detail": "turtle",
+        "documentation": {}
+    },
+    {
+        "label": "open3d",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "open3d",
+        "description": "open3d",
+        "detail": "open3d",
+        "documentation": {}
+    },
+    {
+        "label": "cv2",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "cv2",
+        "description": "cv2",
+        "detail": "cv2",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "matplotlib.pyplot",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.pyplot",
+        "description": "matplotlib.pyplot",
+        "detail": "matplotlib.pyplot",
+        "documentation": {}
+    },
+    {
+        "label": "cm",
+        "importPath": "matplotlib",
+        "description": "matplotlib",
+        "isExtraImport": true,
+        "detail": "matplotlib",
+        "documentation": {}
+    },
+    {
+        "label": "PlaneDetection",
+        "kind": 6,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "class PlaneDetection():\n    def __init__(self, point_cloud):\n        self.point_cloud = point_cloud\n    def colorizeInliers(self, r,g,b):\n        self.inlier_cloud.paint_uniform_color([r,g,b]) # paints the plane in red\n    def segment(self, distance_threshold=0.25, ransac_n=3, num_iterations=50):\n        print('Starting plane detection')\n        plane_model, inlier_idxs = self.point_cloud.segment_plane(distance_threshold=distance_threshold, \n                                                    ransac_n=ransac_n,\n                                                    num_iterations=num_iterations)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def main():\n    # ------------------------------------------\n    # Initialization\n    # ------------------------------------------\n    print(\"Load a ply point cloud, print it, and render it\")\n    point_cloud_original = o3d.io.read_point_cloud('../Ex2/factory_without_ground.ply')\n    number_of_planes = 6\n    colormap = cm.Pastel1(list(range(0,number_of_planes)))\n    # ------------------------------------------\n    # Execution",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "view",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "view = {\n\t\"class_name\" : \"ViewTrajectory\",\n\t\"interval\" : 29,\n\t\"is_loop\" : False,\n\t\"trajectory\" : \n\t[\n\t\t{\n\t\t\t\"boundingbox_max\" : [ 0.87671953439712524, 0.4845428466796875, 2.8718910217285156 ],\n\t\t\t\"boundingbox_min\" : [ -1.5309394598007202, -2.0348093509674072, 0.50720000267028809 ],\n\t\t\t\"field_of_view\" : 60.0,",
+        "detail": "main",
+        "documentation": {}
+    }
+]
